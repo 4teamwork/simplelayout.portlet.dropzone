@@ -1,18 +1,16 @@
 Changelog
 =========
 
-1.1
------------------
-* make simplelayout.base > 2.0rc5 compatible [mathias.leimgruber]
 
-
-1.0
+1.2 (unreleased)
 ----------------
 
-* Initial release
-* create skeleton by useing plone paster template 
-* added configlet
-* update simplelayout.base config.py constants - nasty implementation
+- Move package to github.
+  [jone]
 
 
+1.1 (2010-06-09)
+----------------
 
+- make simplelayout.base > 2.0rc5 compatible
+  [mathias.leimgruber]
