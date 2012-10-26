@@ -5,7 +5,7 @@ version = '1.2.dev0'
 
 setup(name='simplelayout.portlet.dropzone',
       version=version,
-      description="",
+      description="Plone portlet with a simplelayout dropzone.",
       long_description=open("README.rst").read() + "\n" + \
           open(os.path.join("docs", "HISTORY.txt")).read(),
 
