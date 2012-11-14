@@ -5,6 +5,9 @@ Changelog
 1.2 (unreleased)
 ----------------
 
+- CSS: remove overflow hidden.
+  [mathias.leimgruber]
+
 - Move package to github.
   [jone]
 
