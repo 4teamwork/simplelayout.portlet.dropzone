@@ -1,32 +1,29 @@
-from zope.formlib import form
-from plone.fieldsets.fieldsets import FormFieldsets
-from Acquisition import aq_inner
-
-from zope.interface import implements
-from zope.component import getUtility, getMultiAdapter
-from zope.schema.fieldproperty import FieldProperty
+from interfaces import ISimplelayoutConfigurationPortlet
 from persistent import Persistent
-
-from plone.app.controlpanel.form import ControlPanelForm 
+from plone.app.controlpanel.events import ConfigurationChangedEvent
+from plone.app.controlpanel.form import ControlPanelForm
 from plone.app.form.validators import null_validator
-from zope.event import notify
+from plone.fieldsets.fieldsets import FormFieldsets
 from plone.protect import CheckAuthenticator
 from Products.statusmessages.interfaces import IStatusMessage
-from plone.app.controlpanel.events import ConfigurationChangedEvent
-
 from simplelayout.portlet.dropzone import websiteMessageFactory as _
-from interfaces import ISimplelayoutConfigurationPortlet
+from zope.component import getUtility, getMultiAdapter
+from zope.event import notify
+from zope.formlib import form
+from zope.interface import implements
+from zope.schema.fieldproperty import FieldProperty
 
-    
+
 def getPortletConfigUtil(context):
-    return getUtility(ISimplelayoutConfigurationPortlet, name='sl-portlet-config')
+    return getUtility(ISimplelayoutConfigurationPortlet,
+                      name='sl-portlet-config')
 
 
 #we implement plone.app.controlpanel.form.ControlPanelForm
 #for a plone look adn feel
 class SimpleLayoutConfigurationPortletForm(ControlPanelForm):
     # now we use plone.fieldsets to make a better ui
-    
+
     PortletSets = FormFieldsets(ISimplelayoutConfigurationPortlet)
     PortletSets.label = _(u'config for blocks in portlet column')
     PortletSets.id = 'portlet_column_sizes'
@@ -64,7 +61,9 @@ class SimpleLayoutConfigurationPortletForm(ControlPanelForm):
 class SimpleLayoutPortletConfiguration(Persistent):
     implements(ISimplelayoutConfigurationPortlet)
 
-    small_size_portlet = FieldProperty(ISimplelayoutConfigurationPortlet['small_size_portlet'])
-    middle_size_portlet = FieldProperty(ISimplelayoutConfigurationPortlet['middle_size_portlet'])
-    full_size_portlet = FieldProperty(ISimplelayoutConfigurationPortlet['full_size_portlet'])
-    
+    small_size_portlet = FieldProperty(
+        ISimplelayoutConfigurationPortlet['small_size_portlet'])
+    middle_size_portlet = FieldProperty(
+        ISimplelayoutConfigurationPortlet['middle_size_portlet'])
+    full_size_portlet = FieldProperty(
+        ISimplelayoutConfigurationPortlet['full_size_portlet'])

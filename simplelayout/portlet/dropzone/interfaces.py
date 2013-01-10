@@ -1,4 +1,4 @@
-from zope.interface import Interface, Attribute 
+from zope.interface import Interface, Attribute
 from zope.viewlet.interfaces import IViewletManager
 
 class ISlotBlock(Interface):

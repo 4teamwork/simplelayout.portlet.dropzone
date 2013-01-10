@@ -12,11 +12,11 @@
 		    />
 
         <!-- portlet listing -->
-	    <browser:viewlet  
-	        name="simplelayout.base.listingPortlet.body" 
+	    <browser:viewlet
+	        name="simplelayout.base.listingPortlet.body"
 	        manager="simplelayout.portlet.dropzone.interfaces.ISimpleViewletPortletListingProvider"
 	        class=".viewlets.SimplelayoutPortletListingViewlet"
-	        permission="zope2.View" 
+	        permission="zope2.View"
 	        />
 
 </configure>

@@ -4,7 +4,7 @@
     xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="simplelayout.portlet.dropzone">
-    
+
      <plone:portlet
          name="simplelayout.portlet.dropZone"
          interface=".drop_zone_portlet.ISimplelayoutDropZonePortlet"
@@ -13,5 +13,4 @@
          addview=".drop_zone_portlet.AddForm"
          />
 
-    
 </configure>

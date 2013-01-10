@@ -7,5 +7,5 @@
     <browser:resourceDirectory
         name="simplelayout.dropzone-resources"
         directory="resources" />
-        
+
 </configure>

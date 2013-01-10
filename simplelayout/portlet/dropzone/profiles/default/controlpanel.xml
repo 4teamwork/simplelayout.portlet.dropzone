@@ -7,7 +7,7 @@
 			   url_expr="string:${portal_url}/@@sl-portlet-configuration"
 			   condition_expr=""
 			   visible="True">
-			   
+
 	<permission>Manage portal</permission>
 	</configlet>
 

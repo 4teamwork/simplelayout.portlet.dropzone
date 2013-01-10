@@ -1,8 +1,9 @@
-from simplelayout.base.config import SLOT_INTERFACES_MAP as orig_slot_ifaces, \
-                                     COLUMN_INTERFACES_MAP as orig_column_ifaces, \
-                                     IMAGE_SIZE_MAP_PER_INTERFACE as orig_size_map, \
-                                     CONFIGLET_INTERFACE_MAP as orig_config_iface_map
-                                     
+from simplelayout.base.config import (
+    SLOT_INTERFACES_MAP as orig_slot_ifaces,
+    COLUMN_INTERFACES_MAP as orig_column_ifaces,
+    IMAGE_SIZE_MAP_PER_INTERFACE as orig_size_map,
+    CONFIGLET_INTERFACE_MAP as orig_config_iface_map)
+
 
 from config import SLOT_INTERFACES_MAP,  COLUMN_INTERFACES_MAP, \
                    IMAGE_SIZE_MAP_PER_INTERFACE, CONFIGLET_INTERFACE_MAP

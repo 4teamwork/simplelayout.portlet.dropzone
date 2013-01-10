@@ -21,5 +21,5 @@
     <include package=".viewlets" />
     <include package=".configlet" />
     <include package=".browser" />
-    
+
 </configure>
