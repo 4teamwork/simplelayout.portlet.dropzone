@@ -5,6 +5,9 @@ Changelog
 1.2 (unreleased)
 ----------------
 
+- Implement emptymarker css klass.
+  [mathias.leimgruber]
+
 - CSS: remove overflow hidden.
   [mathias.leimgruber]
 
