@@ -5,6 +5,9 @@ Changelog
 1.2 (unreleased)
 ----------------
 
+- Implement an editable css klass.
+  [mathias.leimgruber]
+
 - Code cleanup (remove whitespaces).
   [mathias.leimgruber]
 
