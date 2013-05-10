@@ -10,6 +10,6 @@
 			     class=""
 			     tal:content="structure python:view.renderBlockProvider(result)">block</div>
 		</tal:repeat>
-        <span class="visualClear">&nbsp;</span>
+        <span class="visualClear"><!-- --></span>
      </div>
 </div>
