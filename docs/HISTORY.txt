@@ -5,7 +5,9 @@ Changelog
 1.2.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add simplelayout.base.listingPortlet.body viewlet to a viewlet order manager
+  to fix ordering bug when ordering viewlets in relation with this viewlet.
+  [elioschmutz]
 
 
 1.2.1 (2013-05-24)
