@@ -32,8 +32,8 @@ Links
 
 - Simplelayout github project repository: https://github.com/4teamwork/simplelayout.base
 - simplelayout.portlet.dropzone github project repository: https://github.com/4teamwork/simplelayout.portlet.dropzone
-- Issue tracker: https://github.com/4teamwork/simplelayout.portlet.dropzone/issues
-- Package on pypi: http://pypi.python.org/pypi/simplelayout.portlet.dropzone
+- Issues: https://github.com/4teamwork/simplelayout.portlet.dropzone/issues
+- Pypi: http://pypi.python.org/pypi/simplelayout.portlet.dropzone
 
 
 Copyright
